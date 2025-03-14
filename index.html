@@ -1,0 +1,53 @@
+ <!-- HTML (index.html) -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Chat</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <div class="chat-container">
+  <div class="chat-header">
+  <h1>Live Chat</h1>
+  </div>
+  <div class="chat-body" id="chat-body">
+  <!-- Messages will be appended here -->
+  </div>
+  <div class="chat-input-area">
+  <input type="text" id="message-input" placeholder="Type your message...">
+  <button id="send-button">Send</button>
+  </div>
+ 
+
+  <div class="user-list" id="user-list">
+  <h2>Users</h2>
+  <ul>
+  <!-- Users will be added dynamically here -->
+  </ul>
+  </div>
+ 
+
+  <div class="private-chat" id="private-chat">
+  <h2>Private Chat with <span id="private-chat-user"></span></h2>
+  <div class="private-chat-body" id="private-chat-body">
+  <!-- Private messages will be appended here -->
+  </div>
+  <div class="private-chat-input-area">
+  <input type="text" id="private-message-input" placeholder="Type your private message...">
+  <button id="send-private-button">Send</button>
+  </div>
+  <button id="close-private-chat">Close Private Chat</button>
+  </div>
+ 
+
+  <div class="game-container" id="game-container">
+  <h2>Flappy Bird</h2>
+  <canvas id="game-canvas" width="320" height="480"></canvas>
+  <p>Press Space to Jump</p>
+  </div>
+  </div>
+  <script src="script.js"></script>
+ </body>
+ </html>
