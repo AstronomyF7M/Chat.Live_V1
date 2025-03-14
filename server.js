@@ -51,3 +51,4 @@
  server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
  });
+ <script src="/socket.io/socket.io.js"></script>
